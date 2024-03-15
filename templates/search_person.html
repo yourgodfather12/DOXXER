@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search Person</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Additional CSS for enhanced design */
+        body {
+            background-color: #212529; /* Dark background color */
+            color: #fff; /* Light text color */
+            padding-top: 50px;
+            text-align: center; /* Center align text */
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        label {
+            margin-bottom: 10px;
+            display: block;
+            color: #fff; /* Light text color */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            background-color: #343a40; /* Darker background color for input */
+            color: #fff; /* Light text color */
+            border: none;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Primary color for button */
+            color: #fff; /* Light text color */
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Person</h1>
+        <form action="/search_person" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

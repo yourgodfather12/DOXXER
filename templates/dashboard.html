@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Additional CSS for enhanced design */
+        body {
+            background-color: #212529; /* Dark background color */
+            color: #fff; /* Light text color */
+            padding-top: 50px;
+            text-align: center; /* Center align text */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .col {
+            flex: 0 0 45%; /* Adjust column width */
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff; /* Primary color for links */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Manage People</h2>
+                <ul>
+                    <li><a href="/add_person">Add Person</a></li>
+                    <li><a href="/search_person">Search Person</a></li>
+                    <li><a href="/display_people">Display People</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Data Operations</h2>
+                <ul>
+                    <li><a href="/export_data">Export Data</a></li>
+                    <li><a href="/import_data">Import Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

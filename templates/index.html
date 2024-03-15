@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tool - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Additional CSS for enhanced design */
+        body {
+            background-color: #212529; /* Dark background color */
+            color: #fff; /* Light text color */
+            padding-top: 50px;
+            text-align: center; /* Center align text */
+            font-family: Arial, sans-serif; /* Use a fallback font for compatibility */
+        }
+        header {
+            margin-bottom: 50px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        .auth-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Primary color for buttons */
+            color: #fff; /* Light text color */
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOXXER</h1>
+        <p>The Ultimate Doxxing Manager</p>
+    </header>
+    <main>
+        <div class="auth-options">
+            <a href="{{ url_for('login') }}" class="btn">Login</a>
+            <a href="{{ url_for('register') }}" class="btn">Register</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Tool. All rights reserved.</p>
+    </footer>
+</body>
+</html>
